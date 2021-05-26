@@ -543,9 +543,11 @@ class PlayState extends MusicBeatState
 
 			case 'seventeen':
 				{
+
 					defaultCamZoom = 0.9;
 					curStage = 'british';
-					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback'));
+					
+					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('british/stageback'));
 					bg.antialiasing = true;
 					bg.scrollFactor.set(0.9, 0.9);
 					bg.active = false;
