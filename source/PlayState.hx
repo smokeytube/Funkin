@@ -546,7 +546,11 @@ class PlayState extends MusicBeatState
 
 					defaultCamZoom = 0.9;
 					curStage = 'british';
-					
+
+					var bgSky = new FlxSprite().loadGraphic(Paths.image('weeb/weebSky'));
+					bgSky.scrollFactor.set(0.1, 0.1);
+					add(bgSky);
+
 					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('british/stageback'));
 					bg.antialiasing = true;
 					bg.scrollFactor.set(0.9, 0.9);
