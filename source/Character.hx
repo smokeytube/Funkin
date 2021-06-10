@@ -139,6 +139,7 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
+
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('spooky_kids_assets');
 				frames = tex;
