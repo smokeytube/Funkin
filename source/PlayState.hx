@@ -541,11 +541,11 @@ class PlayState extends MusicBeatState
 					 */
 				}
 
-			case 'seventeen':
+			case 'devil-went-down-to-georgia':
 				{
 
 					defaultCamZoom = 0.8;
-					curStage = 'british';
+					curStage = 'devil-went-down-to-georgia';
 
 					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('highlands'));
 					bg.antialiasing = true;
