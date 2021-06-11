@@ -23,7 +23,7 @@ class StoryMenuState extends MusicBeatState
 	var scoreText:FlxText;
 
 	var weekData:Array<Dynamic> = [
-		['devil-went-down-to-georgia']
+		['katyusha', 'devil-went-down-to-georgia']
 	];
 	var curDifficulty:Int = 1;
 
@@ -41,7 +41,7 @@ class StoryMenuState extends MusicBeatState
 	];
 
 	var weekNames:Array<String> = [
-		"British",
+		"Folk Song",
 		"Daddy Dearest",
 		"Spooky Month",
 		"PICO",

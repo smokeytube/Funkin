@@ -562,6 +562,27 @@ class PlayState extends MusicBeatState
 					add(stageFront);
 				}
 
+				case 'katyusha':
+					{
+	
+						defaultCamZoom = 0.8;
+						curStage = 'katyusha';
+	
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('highlands'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+	
+						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('hill'));
+						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+						stageFront.updateHitbox();
+						stageFront.antialiasing = true;
+						stageFront.scrollFactor.set(0.9, 0.9);
+						stageFront.active = false;
+						add(stageFront);
+					}
+
 			default:
 				{
 					defaultCamZoom = 0.9;
