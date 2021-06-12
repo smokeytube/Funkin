@@ -568,6 +568,7 @@ class PlayState extends MusicBeatState
 						defaultCamZoom = 0.8;
 						curStage = 'katyusha';
 	
+
 						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('highlands'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.9, 0.9);
@@ -581,6 +582,17 @@ class PlayState extends MusicBeatState
 						stageFront.scrollFactor.set(0.9, 0.9);
 						stageFront.active = false;
 						add(stageFront);
+
+						var repositionShit = -200;
+
+						var treeLeaves:FlxSprite = new FlxSprite(repositionShit, -40);
+						treeLeaves.frames = Paths.getSparrowAtlas('petals');
+						treeLeaves.animation.addByPrefix('leaves', 'PETALS ALL', 24, true);
+						treeLeaves.animation.play('leaves');
+						treeLeaves.scrollFactor.set(0.85, 0.85);
+						add(treeLeaves);
+
+
 					}
 
 			default:
